@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churn Prediction</title>
+</head>
+
+<body style="background-color: rgb(122, 200, 142);">
+    <img src="Gradient_Descent_Img.png" alt="Trulli" width="500" height="333">
+
+    <h1> Churn Prediction </h1>
+    <form method="GET" action="/predict_churn">
+
+        <label>CreditScore:</label>
+        <input type = "text" name = "CreditScore">
+        </select>
+
+        <br>
+        <br>
+
+
+        <label>Age:</label>
+        <input type = "Age" name = "Age">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Tenure:</label>
+        <input type = "text" name = "Tenure">
+        </select>
+
+        <br>
+        <br>
+        
+        <label>Balance:</label>
+        <input type = "text" name = "Balance">
+        </select>
+
+
+        <br>
+        <br>
+
+        <label>NumOfProducts:</label>
+        <input type = "text" name = "NumOfProducts">
+        </select>
+
+
+        <br>
+        <br>
+
+        <label>HasCrCard:</label>
+        <input type = "text" name = "HasCrCard">
+        </select>
+
+
+        <br>
+        <br>
+
+        <label>IsActiveMember:</label>
+        <input type = "text" name = "IsActiveMember">
+        </select>
+
+
+        <br>
+        <br>
+
+        
+        <label>EstimatedSalary:</label>
+        <input type = "text" name = "EstimatedSalary">
+        </select>
+
+
+        <br>
+        <br> 
+
+        <label>Geography:</label>
+        <select name = "Geography">
+            <option value = "France">France</option>
+            <option value = "Germany">Germany</option>
+            <option value = "Spain">Spain</option>
+            
+        </select>
+
+        <br>
+        <br>
+
+        <label>Gender:</label>
+        <select name = "Gender">
+            <option value = "Male">Male</option>
+            <option value = "Female">Female</option>
+           
+            
+        </select>
+
+        <br>
+        <br>
+
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+
+        <h4><strong>Your predicated customer will be <b> {{ prediction }} </strong></h4>
+
+
+    </form>
+
+
+</body>
+</html>

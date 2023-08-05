@@ -50,4 +50,9 @@ class Churn():
         test_array[0,Gender_index] = 1
 
         predicted_churn = self.model.predict(test_array)[0]
-        return predicted_churn
+        if predited_churn == 1:
+            Final_prediction = "Cusotmer will be retained"
+        else:
+            Final_prediction = "Cusotmer will not be retained"
+        
+        return Final_prediction
